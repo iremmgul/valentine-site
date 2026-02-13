@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>İrem’den Sana 💌</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- START SCREEN -->
+<div id="overlay">
+  <div class="start-box">
+    <h2>İrem’den sana bir mektup var 💌</h2>
+    <button onclick="start()" style="margin-bottom: 0px;">Başla</button>
+  </div>
+</div>
+
+<!-- QUESTIONS -->
+<div id="quiz" class="hidden">
+
+<h2 style="font-size: 30px;">Soruları cevapla 💕</h2>
+
+<div id="questions"></div>
+
+<button onclick="checkAnswers()">Kontrol Et</button>
+
+</div>
+
+<!-- ENVELOPE -->
+<div id="envelope" class="hidden">
+
+<div class="envelope" onclick="openEnvelope()">✉️</div>
+
+<div id="photos">
+  <img src="images/img1.jpeg" class="photo">
+  <img src="images/img2.jpeg" class="photo">
+  <img src="images/img3.jpeg" class="photo">
+  <img src="images/img4.jpeg" class="photo">
+  <img src="images/img5.jpeg" class="photo">
+  <img src="images/img6.jpeg" class="photo">
+</div>
+
+<div id="letter">
+Sevgilimmm,
+
+Böyle minik bir şey hazırlayıp gülümsetmek istedim seni. Çünkü sen hayatıma girdiğin günden beri
+ben daha çok gülüyorum,
+daha mutlu uyanıyorum ve hiç olmadığım kadar huzurluyum.
+
+Seni görmediğim günlerde hep bir şeyler eksik kalıyor içimde, hep yan yana olmak istiyorum. Sanki kalbim senin yanındayken tamamlanıyor.
+
+Aşkımsın, balımsın, bitanemsin...
+Ve geleceğe dair kurduğum her hayalin içindesin.
+
+İyi ki hayatımdasın, iyi ki hayatımsın.
+İyi ki benimlesin.
+
+Seni çok seviyorum.
+Hep de sevicemmmmm.
+
+– İrem ❤️
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

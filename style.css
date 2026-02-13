@@ -1,0 +1,166 @@
+body {
+margin:0;
+font-family: Arial;
+min-height: 100vh;
+
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(8px);
+}
+
+#overlay {
+position:fixed;
+width:100%;
+height:100%;
+backdrop-filter: blur(8px);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.start-box {
+background:#f9dcc5;
+padding:40px;
+border-radius:15px;
+text-align:center;
+border: #c5053b solid;
+}
+
+button {
+font-size: larger;
+height: 50px;
+border:2px solid #c5053b;
+background:#f9dcc5;
+border-radius:20px;
+box-shadow:0 0 8px rgba(255,105,180,.4);
+padding:10px 25px;
+margin-bottom: 30px;
+}
+
+button:hover {
+box-shadow:0 0 15px rgba(255,105,180,.7);
+}
+
+#quiz {
+padding:10px;
+text-align:center;
+}
+
+input {
+margin:5px;
+padding:0px;
+}
+
+#envelope {
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(8px);
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+z-index:5;
+}
+
+.hidden {
+display:none !important;
+}
+
+
+.envelope {
+font-size:100px;
+cursor:pointer;
+}
+
+#photos img {
+width:180px;
+margin:5px;
+animation:float 2s ease-out;
+}
+
+#photos {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+.photo {
+  position: absolute;
+  width: 200px;
+  border-radius: 12px;
+  opacity: 0;
+  transform: scale(.5);
+  transition: .8s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+
+
+#letter {
+display:none;
+background:#f9dcc5;
+padding:30px;
+width:400px;
+border-radius:15px;
+margin-top:20px;
+}
+
+#questions {
+display:grid;
+grid-template-columns: repeat(2, 1fr);
+gap:10px;
+max-width:1100px;
+margin:40px 15px;
+box-sizing:border-box;
+font-size: large;
+}
+
+.question-box {
+background: #f9dcc5;
+margin: 10px 0px;
+padding:15px 15px;
+border-radius:12px;
+box-shadow:0 3px 8px #c5053b;
+text-align:left;
+width: 625px;
+}
+
+.question-box input {
+width:50%;
+margin-top:8px;
+}
+
+.answer {
+gap:5px;
+margin-top:6px;
+flex-wrap:wrap;
+}
+
+.answer input {
+width:25px;
+height:25px;
+border-radius:50%;
+border:1px solid #ccc;
+text-align:center;
+font-size:14px;
+}
+
+.answer input:focus {
+outline:none;
+border:2px solid pink;
+}
+
+
+
+@keyframes float {
+from {transform:translateY(50px);}
+to {transform:translateY(0);}
+}
